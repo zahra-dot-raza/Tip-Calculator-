@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="calculator">
+                <header>
+                    <h1>Tip Calculator</h1>
+                </header>
+                <main>
+                    <section class="options">
+                        <div class="input-group">
+                        <div class="pre"> $ </div>
+                        <input type="number" class="cost" placeholder="How much was the bill" />
+                        </div>
+                        <div class="input-group">
+                            <select class="service" required>
+                                <option diable selected> How was the service?</option>
+                                <option value="18"> Excellent </option>
+                                <option value="15"> Great </option>
+                                <option value="10"> Good </option>
+                                <option value="5"> Okay </option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" class="people" placeholder="How many are sharing the bill?" />
+                        </div>
+                    </section>
+                    <section class="tip-wrap">
+                        <p> You should tip: </p>
+                        <h3 class="tip"> $0</h3>
+                    </section>
+                </main>
+                <footer>
+                    <button id="tip-btn"> Tip </button>
+                </footer>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+
+</html>
